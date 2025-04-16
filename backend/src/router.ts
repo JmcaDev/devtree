@@ -1,14 +1,10 @@
 import { Router } from "express"
-
 const router = Router()
 
-//Routing
-router.get("/", (req, res) => {
-    res.send("Index")
+/** Auth & Registration */
+router.post("/auth/register", (req, res) => {
+    console.log(req.body)
 })
 
-router.get("/nosotros", (req, res) => {
-    res.send("Nosotros")
-})
 
 export default router
